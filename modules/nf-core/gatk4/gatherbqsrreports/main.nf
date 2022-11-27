@@ -32,7 +32,7 @@ process GATK4_GATHERBQSRREPORTS {
     gatk --java-options "-Xmx${avail_mem}g" GatherBQSRReports \\
         $input_list \\
         --output ${prefix}.table \\
-        --tmp-dir . \\
+        --tmp-dir /tmp \\
         $args
 
     cat <<-END_VERSIONS > versions.yml

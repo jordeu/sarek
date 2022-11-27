@@ -39,7 +39,7 @@ process GATK4_APPLYVQSR {
         $reference_command \\
         --tranches-file $tranches \\
         --recal-file $recal \\
-        --tmp-dir . \\
+        --tmp-dir /tmp \\
         $args
 
     cat <<-END_VERSIONS > versions.yml

@@ -41,7 +41,7 @@ process GATK4_GETPILEUPSUMMARIES {
         --output ${prefix}.pileups.table \\
         $reference_command \\
         $interval_command \\
-        --tmp-dir . \\
+        --tmp-dir /tmp \\
         $args
 
     cat <<-END_VERSIONS > versions.yml

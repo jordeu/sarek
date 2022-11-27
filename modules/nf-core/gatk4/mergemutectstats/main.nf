@@ -32,7 +32,7 @@ process GATK4_MERGEMUTECTSTATS {
     gatk --java-options "-Xmx${avail_mem}g" MergeMutectStats \\
         $input_list \\
         --output ${prefix}.vcf.gz.stats \\
-        --tmp-dir . \\
+        --tmp-dir /tmp \\
         $args
 
     cat <<-END_VERSIONS > versions.yml

@@ -40,7 +40,7 @@ process GATK4_FILTERVARIANTTRANCHES {
         --variant $vcf \\
         $resources \\
         --output ${prefix}.filtered.vcf.gz \\
-        --tmp-dir . \\
+        --tmp-dir /tmp \\
         $args
 
     cat <<-END_VERSIONS > versions.yml

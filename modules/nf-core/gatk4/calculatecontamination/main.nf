@@ -34,7 +34,7 @@ process GATK4_CALCULATECONTAMINATION {
         --input $pileup \\
         --output ${prefix}.contamination.table \\
         $matched_command \\
-        --tmp-dir . \\
+        --tmp-dir /tmp \\
         $args
 
     cat <<-END_VERSIONS > versions.yml

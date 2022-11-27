@@ -38,7 +38,7 @@ process GATK4_APPLYBQSR_SPARK {
         --bqsr-recal-file $bqsr_table \\
         $interval_command \\
         --spark-master local[${task.cpus}] \\
-        --tmp-dir . \\
+        --tmp-dir /tmp \\
         $args
 
     cat <<-END_VERSIONS > versions.yml

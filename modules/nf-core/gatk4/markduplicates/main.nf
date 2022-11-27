@@ -40,7 +40,7 @@ process GATK4_MARKDUPLICATES {
         $input_list \\
         --OUTPUT ${prefix}.bam \\
         --METRICS_FILE ${prefix}.metrics \\
-        --TMP_DIR . \\
+        --TMP_DIR /tmp \\
         ${reference} \\
         $args
 

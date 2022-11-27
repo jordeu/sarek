@@ -49,7 +49,7 @@ process GATK4_MUTECT2 {
         $pon_command \\
         $gr_command \\
         $interval_command \\
-        --tmp-dir . \\
+        --tmp-dir /tmp \\
         $args
 
     cat <<-END_VERSIONS > versions.yml

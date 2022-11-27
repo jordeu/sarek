@@ -36,7 +36,7 @@ process GATK4_ESTIMATELIBRARYCOMPLEXITY {
         $input_list \\
         --OUTPUT ${prefix}.metrics \\
         --REFERENCE_SEQUENCE ${fasta} \\
-        --TMP_DIR . \\
+        --TMP_DIR /tmp \\
         $args
 
     cat <<-END_VERSIONS > versions.yml

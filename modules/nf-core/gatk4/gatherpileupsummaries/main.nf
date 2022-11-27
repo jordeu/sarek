@@ -35,7 +35,7 @@ process GATK4_GATHERPILEUPSUMMARIES {
         $input_list \\
         --O ${prefix}.pileupsummaries.table \\
         --sequence-dictionary $dict \\
-        --tmp-dir . \\
+        --tmp-dir /tmp \\
         $args
 
     cat <<-END_VERSIONS > versions.yml

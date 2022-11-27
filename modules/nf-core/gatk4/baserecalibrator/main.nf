@@ -41,7 +41,7 @@ process GATK4_BASERECALIBRATOR {
         --reference $fasta \\
         $interval_command \\
         $sites_command \\
-        --tmp-dir . \\
+        --tmp-dir /tmp \\
         $args
 
     cat <<-END_VERSIONS > versions.yml

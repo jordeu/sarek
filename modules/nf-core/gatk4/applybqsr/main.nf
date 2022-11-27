@@ -39,7 +39,7 @@ process GATK4_APPLYBQSR {
         --reference $fasta \\
         --bqsr-recal-file $bqsr_table \\
         $interval_command \\
-        --tmp-dir . \\
+        --tmp-dir /tmp \\
         $args
 
     cat <<-END_VERSIONS > versions.yml

@@ -37,7 +37,7 @@ process GATK4_MARKDUPLICATES_SPARK {
         --output $prefix \\
         --reference $fasta \\
         --spark-master local[${task.cpus}] \\
-        --tmp-dir . \\
+        --tmp-dir /tmp \\
         $args
 
     cat <<-END_VERSIONS > versions.yml

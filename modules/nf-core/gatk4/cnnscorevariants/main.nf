@@ -47,7 +47,7 @@ process GATK4_CNNSCOREVARIANTS {
         $aligned_input \\
         $architecture \\
         $weights \\
-        --tmp-dir . \\
+        --tmp-dir /tmp \\
         $args
 
     cat <<-END_VERSIONS > versions.yml

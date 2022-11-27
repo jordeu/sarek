@@ -40,7 +40,7 @@ process GATK4_BASERECALIBRATOR_SPARK {
         $interval_command \\
         $sites_command \\
         --spark-master local[${task.cpus}] \\
-        --tmp-dir . \\
+        --tmp-dir /tmp \\
         $args
 
     cat <<-END_VERSIONS > versions.yml

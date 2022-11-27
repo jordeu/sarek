@@ -44,7 +44,7 @@ process GATK4_HAPLOTYPECALLER {
         $dbsnp_command \\
         $interval_command \\
         $dragstr_command \\
-        --tmp-dir . \\
+        --tmp-dir /tmp \\
         $args
 
     cat <<-END_VERSIONS > versions.yml

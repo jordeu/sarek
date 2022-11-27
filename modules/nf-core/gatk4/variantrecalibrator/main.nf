@@ -44,7 +44,7 @@ process GATK4_VARIANTRECALIBRATOR {
         --output ${prefix}.recal \\
         --tranches-file ${prefix}.tranches \\
         $reference_command \\
-        --tmp-dir . \\
+        --tmp-dir /tmp \\
         $labels_command \\
         $args
 
